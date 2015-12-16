@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:GHAd="http://schemas.android.com/apk/res/com.mchenxin.moko">
+    <ViewFlipper android:orientation="vertical" android:id="@id/photoViewFlipper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.mchenxin.moko.widget.ProgressBar android:id="@id/photoProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.mchenxin.moko.widget.PhotoGallery android:id="@id/photoGallery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animationDuration="0" android:spacing="16.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.mchenxin.moko.widget.FailureBar android:id="@id/photoFailureBar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ViewFlipper>
+    <LinearLayout android:id="@id/photoAdLayout" android:background="#ff000000" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_below="@id/spinner" android:layout_centerHorizontal="true">
+        <com.guohead.sdk.GuoheAdLayout android:layout_width="fill_parent" android:layout_height="wrap_content" GHAd:GH_APPKEY="5a9b2c35376af85265ec7e82f1781ec7" />
+    </LinearLayout>
+</LinearLayout>

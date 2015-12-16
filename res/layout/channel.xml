@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/relativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:GHAd="http://schemas.android.com/apk/res/com.mchenxin.moko">
+    <Spinner android:id="@id/spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@id/channelAdLayout" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_below="@id/spinner" android:layout_centerHorizontal="true">
+        <com.guohead.sdk.GuoheAdLayout android:layout_width="fill_parent" android:layout_height="wrap_content" GHAd:GH_APPKEY="5a9b2c35376af85265ec7e82f1781ec7" />
+    </LinearLayout>
+    <ViewFlipper android:orientation="vertical" android:id="@id/channelViewFlipper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/channelAdLayout">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.mchenxin.moko.widget.ProgressBar android:id="@id/channelProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <GridView android:id="@id/channelGridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:columnWidth="90.0dip" android:numColumns="auto_fit" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.mchenxin.moko.widget.FailureBar android:id="@id/channelFailureBar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ViewFlipper>
+    <LinearLayout android:orientation="horizontal" android:id="@id/child_layout" android:background="#774c4c4c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/pre" android:background="@drawable/left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_toRightOf="@id/pre" />
+        <Button android:id="@id/next" android:background="@drawable/right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_alignParentRight="true" />
+    </LinearLayout>
+</RelativeLayout>

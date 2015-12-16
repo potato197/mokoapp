@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">美空美图</string>
+    <string name="app_folder">mokocc</string>
+    <string name="channel">MOKO 行业分类</string>
+    <string name="chosen">MOKO！精选</string>
+    <string name="photographer">摄影造型 Photographer/Stylist</string>
+    <string name="models">模特儿 Models</string>
+    <string name="design">设计插画 Design/Illustration</string>
+    <string name="actor">演员主持 Actor/Actress Host</string>
+    <string name="music">音乐 Music</string>
+    <string name="movie">电影电视 Movie/Television</string>
+    <string name="advertising">广告传媒 Advertising/Media</string>
+    <string name="arts">艺术 Arts</string>
+    <string name="more">更多行业 More...</string>
+    <string name="site">个人网站</string>
+    <string name="post">展示</string>
+    <string name="retry">重试</string>
+    <string name="loading">加载中....</string>
+    <string name="connection_fail">网络连接错误！</string>
+    <string name="firstpage">首页</string>
+    <string name="lastpage">最后一页</string>
+    <string name="wifinote">"没有可用的WLAN网络。
+注意：如果继续使用，可能消耗较多流量。"</string>
+    <string name="goon">继续</string>
+    <string name="quit">退出</string>
+    <string name="savepic">保存到本地</string>
+    <string name="savesuccess">保存文件成功！</string>
+    <string name="savefailed">无法保存文件！</string>
+    <string name="setbackgroud">设为墙纸</string>
+    <string name="setsuccess">设置墙纸成功！</string>
+    <string name="setfailed">无法设置墙纸！</string>
+    <string name="prephoto">上一张</string>
+    <string name="menusave">保存</string>
+    <string name="menuwallpaper">墙纸</string>
+    <string name="nextphoto">下一张</string>
+</resources>
